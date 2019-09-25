@@ -24,7 +24,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-// Using groups so that all admin only routed can be here
+// Using groups so that all admin only routes can be grouped together
 Route::group(
     [
         'middleware'    => ['auth','admin'],

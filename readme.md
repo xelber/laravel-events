@@ -8,6 +8,7 @@ cp .env.example .env
 composer install
 npm install
 npm run dev
+php artisan migrate
 ```
 ## Configuration
 Please update the following in your .env for the mail to work  
@@ -21,3 +22,19 @@ MAIL_FROM_ADDRESS=support@foodbyus.com
 MAIL_FROM_NAME=Support
 MAIL_ENCRYPTION=null
 ```
+Update the following for the queue to take effect
+```
+QUEUE_CONNECTION=database
+```
+
+## Testing
+Please create a user to test the area protected by is_admin flag. /admin url is only accessible by users with is_admin set to 1.
+```
+php artisan user:regexpired 1
+```
+Will send UserRegExpired event
+```
+php artisan queue:work
+```
+Will activate the worker.  
+NotifyUserExpiredReg::handle is set to Laravel Notification API to send an email

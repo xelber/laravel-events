@@ -28,7 +28,7 @@ QUEUE_CONNECTION=database
 ```
 
 ## Testing
-Please create a user to test the area protected by is_admin flag. /admin url is only accessible by users with is_admin set to 1.
+Please create a user to test the area protected by is_admin flag. /admin url is only accessible by users with is_admin set to 1. You can do so by going in to /register and creating a user. Please change the is_admin flag in table to 1.
 ```
 php artisan user:regexpired 1
 ```

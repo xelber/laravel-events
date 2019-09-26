@@ -37,4 +37,4 @@ Will send UserRegExpired event
 php artisan queue:work
 ```
 Will activate the worker.  
-NotifyUserExpiredReg::handle is set to Laravel Notification API to send an email
+NotifyUserExpiredReg::handle is set to use Laravel Notification API to send an email

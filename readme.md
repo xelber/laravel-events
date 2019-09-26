@@ -10,6 +10,8 @@ npm install
 npm run dev
 php artisan migrate
 ```
+Please setup a vhost or artisan serve to test the deployment.
+
 ## Configuration
 Please update the following in your .env for the mail to work(mailtrap)  
 ```

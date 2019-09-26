@@ -4,7 +4,7 @@
 git clone git@github.com:xelber/laravel-events.git laravel-events
 cd laravel-events
 cp .env.example .env
-# Update .env file as needed
+# Update .env file as needed, (update DB credentials)
 composer install
 npm install
 npm run dev

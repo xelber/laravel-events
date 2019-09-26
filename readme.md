@@ -11,13 +11,13 @@ npm run dev
 php artisan migrate
 ```
 ## Configuration
-Please update the following in your .env for the mail to work  
+Please update the following in your .env for the mail to work(mailtrap)  
 ```
 MAIL_DRIVER=smtp
 MAIL_HOST=smtp.mailtrap.io
 MAIL_PORT=2525
-MAIL_USERNAME=[YOUR MAILTRAP USER NAME]
-MAIL_PASSWORD=[YOUR MAILTRAP PASSWORD]
+MAIL_USERNAME=d8dc74376326ce
+MAIL_PASSWORD=c5c2f6231706a2
 MAIL_FROM_ADDRESS=support@foodbyus.com
 MAIL_FROM_NAME=Support
 MAIL_ENCRYPTION=null
